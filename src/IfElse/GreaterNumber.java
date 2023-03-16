@@ -1,3 +1,5 @@
+package IfElse;
+
 public class GreaterNumber {
 
     public static void main(String[] args) {
@@ -5,14 +7,14 @@ public class GreaterNumber {
         int a = 100 ;
         int b = 20;
 
-        if ( a > b )
-        {
+        if ( a > b ) {
+
             System.out.println("a is greater");
+            System.out.println("a =" + a);
         }
         else
-        {
             System.out.println("b is greater");
-        }
+
 
     }
 
