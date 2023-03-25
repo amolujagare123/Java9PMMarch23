@@ -12,7 +12,7 @@ public class DoubleArrayDemo {
         d[3] = 71.52;
         d[4] = 19.82;
         System.out.println("using for each loop");
-       // :: --> scope resolute
+       // :: --> scope resolution operator
         for (double i:d) // for each loop
         {
             System.out.println(i);
