@@ -1,5 +1,7 @@
 package IfElse;
 
+import ClassNConstructors.pack1.Java1;
+
 public class GreaterNumber {
 
     public static void main(String[] args) {
@@ -15,7 +17,8 @@ public class GreaterNumber {
         else
             System.out.println("b is greater");
 
-
+        /*Java1 ob = new Java1();
+        ob.a = 10 ;*/
     }
 
 }

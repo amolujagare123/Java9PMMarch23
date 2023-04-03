@@ -1,10 +1,10 @@
-package ClassNConstructors;
+package ClassNConstructors.pack1;
 
-public class MyClass {
+public class Java1 {
 
-    int a;
-    double d;
-    char c;
+    public int a;
+    public double d;
+    private char c;
     String str;
 
     void display()
@@ -16,23 +16,13 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-      /*  int x;
-        x = 10 ;*/
 
-        MyClass ob = new MyClass();
+        Java1 ob = new Java1();
         ob.a = 10 ;
         ob.d = 34.67;
         ob.c = 'g';
         ob.str = "amol";
         ob.display();
-
-        MyClass ob2 = new MyClass();
-        ob2.a = 11 ;
-        ob2.d = 14.67;
-        ob2.c = 'h';
-        ob2.str = "ashish";
-
-        ob2.display();
 
     }
 }

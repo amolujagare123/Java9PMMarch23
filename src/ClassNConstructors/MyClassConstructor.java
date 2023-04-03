@@ -1,11 +1,24 @@
 package ClassNConstructors;
 
-public class MyClass {
+public class MyClassConstructor {
 
     int a;
     double d;
     char c;
     String str;
+
+
+    MyClassConstructor()
+    {
+       a = 10;
+       d = 23.45;
+       c = 'g';
+       str = "text";
+    }
+
+    /*MyClassConstructor(int a) {
+        a= 10;
+    }*/
 
     void display()
     {
@@ -16,23 +29,14 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-      /*  int x;
-        x = 10 ;*/
 
-        MyClass ob = new MyClass();
-        ob.a = 10 ;
+        MyClassConstructor ob = new MyClassConstructor();
+       /* ob.a = 10 ;
         ob.d = 34.67;
         ob.c = 'g';
-        ob.str = "amol";
+        ob.str = "amol";*/
+
         ob.display();
-
-        MyClass ob2 = new MyClass();
-        ob2.a = 11 ;
-        ob2.d = 14.67;
-        ob2.c = 'h';
-        ob2.str = "ashish";
-
-        ob2.display();
 
     }
 }
