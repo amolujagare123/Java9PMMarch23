@@ -13,11 +13,11 @@ public class BabyDog extends Dog {
 
         Dog d = new Dog();
         d.bark();
-        d.eat();
+        //d.eat();
 
         BabyDog bd = new BabyDog();
         bd.weep();
         bd.bark();
-        bd.eat();
+       // bd.eat();
     }
 }

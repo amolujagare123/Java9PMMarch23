@@ -7,12 +7,12 @@ public class SampleClass extends Dog {
     public static void main(String[] args) {
 
         Animal a = new Animal();
-        a.eat();
+       // a.eat();
 
         SampleClass s = new SampleClass();
-        s.eat();
+      //  s.eat();
 
         Dog d = new Dog();
-        d.eat();
+      //  d.eat();
     }
 }

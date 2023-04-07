@@ -1,6 +1,11 @@
-package InheritanceDemo;
+package InheritanceDemo.SuperKeyword;
 
 public class Animal {
+
+    Animal()
+    {
+        System.out.println("Animal Constructor");
+    }
 
 
     void eat()
@@ -10,6 +15,11 @@ public class Animal {
 }
 
 class Dog extends Animal {
+    Dog()
+    {
+        super();
+        System.out.println("Dog Constructor");
+    }
     void bark()
     {
         System.out.println("bark");
@@ -17,22 +27,24 @@ class Dog extends Animal {
 }
 
 class BabyDog extends Dog {
+
+    BabyDog()
+    {
+        super();
+        System.out.println("BabyDog Constructor");
+    }
     void weep()
     {
         System.out.println("weep");
     }
 
     public static void main(String[] args) {
-        Animal a = new Animal();
-        a.eat();
+       // Animal a = new Animal();
 
-        Dog d = new Dog();
-        d.bark();
-        d.eat();
+
+    //   Dog d = new Dog();
 
         BabyDog bd = new BabyDog();
-        bd.weep();
-        bd.bark();
-        bd.eat();
+
     }
 }

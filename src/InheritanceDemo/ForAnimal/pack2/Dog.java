@@ -9,7 +9,7 @@ public class Dog extends Animal {
 
                 Dog d = new Dog();
                 d.bark();
-                d.eat();
+            //    d.eat();
         }
 
 }
