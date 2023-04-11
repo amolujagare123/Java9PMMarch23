@@ -8,8 +8,6 @@ public class Parent {
     }
 }
 
-
-
 class Child extends Parent{
 
     // Copy -- void addition()
@@ -22,7 +20,8 @@ class Child extends Parent{
         Child ob = new Child();
         ob.addition();
 
-        Parent p = new Child(); // object reference of parent class
+        Parent p = new Child();  // upcasting
+        // object reference of parent class
         // reference variable
         p.addition(); // this will call copy of addition present in child class
 
