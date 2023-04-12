@@ -39,6 +39,8 @@ public class MethodArguments {
         System.out.println("inside nonPrimitiveMethod");
         System.out.println("Printing argument="+c);
     }
+
+    //--------------------------------------------------------------
     void objectAsArgument(BabyDog b)
     {
         System.out.println("inside objectAsArgument");
@@ -48,23 +50,60 @@ public class MethodArguments {
     }
 
     void arrayAsArgument(int[] x) {
-
+        System.out.println("inside arrayAsArgument");
         for (int y:x ) {
             System.out.println(y);
         }
     }
 
-    void arrayAsArgument(int[][] x) {
-
+    void twoDArrayAsArgument(String[][] x) {
+        System.out.println("inside twoDArrayAsArgument");
         for (int i=0;i<x.length;i++ ) {
             for (int j=0;j<x[0].length;j++) {
-                System.out.println(x[i][j]);
+                System.out.print(x[i][j]+" ");
             }
+            System.out.println();
         }
     }
 
 
     public static void main(String[] args) {
 
+        MethodArguments ob = new MethodArguments();
+
+        ob.singleArgumentMethod(10);
+        ob.multipleArgumentMethod(45,12,78);
+        ob.differentArgumentMethod(23,56.78,"java");
+        ob.primitiveNonPrimitiveMethod('j',"amol");
+        ob.nonPrimitiveMethod("this is a string");
+//----------------------------------------------------------------------
+
+        ob.objectAsArgument(new BabyDog());
+
+        BabyDog babyDog = new BabyDog();
+        ob.objectAsArgument(babyDog);
+//----------------------------------------------------------------------
+
+      /*  int[] arr = new int[5];
+
+        arr[0] = 11;
+        arr[1] = 56;
+        arr[2] = 77;
+        arr[3] = 33;
+        arr[4] = 65;*/
+
+        int[] arr = {34,56,12,78,12,99,23,45,67,90};
+         ob.arrayAsArgument(arr);
+
+//----------------------------------------------------------------------
+         String[][] stArr = {
+
+                 {"abc1","pqr1","xyz1"},
+                 {"abc2","pqr2","xyz2"},
+                 {"abc3","pqr3","xyz3"},
+                 {"abc4","pqr4","xyz4"},
+         };
+
+         ob.twoDArrayAsArgument(stArr);
     }
 }
