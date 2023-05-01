@@ -8,15 +8,23 @@ public class ArithmaticOperation {
 
         int c = 0;
 
-        try {
+       try {
             c = a / b;
         }
         catch (Exception e)
         {
+         /*   System.out.println(e);
+            System.out.println(e.getMessage());
+            System.out.println(e.getClass());*/
+            e.printStackTrace();
 
         }
-        System.out.println("c="+c);
-        System.out.println("End of the program");
+       finally {
+           System.out.println("amol is writing code");
+           System.out.println("c="+c);
+           System.out.println("End of the program");
+       }
+
 
     }
 }

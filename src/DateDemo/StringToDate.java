@@ -6,12 +6,20 @@ import java.util.Date;
 
 public class StringToDate {
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws Exception {
         String dateStr0= "23-June-2016" ;
         System.out.println("Given date in String="+dateStr0);
         //→ dd-MMMM-yyyy
         SimpleDateFormat sd0 = new SimpleDateFormat("dd-MMMM-yyyy");
-        Date date0 = sd0.parse(dateStr0);
+        Date date0 = null;
+
+      //  try {
+            date0 = sd0.parse(dateStr0);
+       /* } catch (ParseException e) {
+            e.printStackTrace();
+        }*/
+
+
         System.out.println("Converted Date="+date0);
 
         String dateStr1= "23 | June 16  8:34" ;
