@@ -1,4 +1,4 @@
-package ArrayListDemo;
+package Collections.ArrayListDemo;
 
 public class ArrayReversal {
 

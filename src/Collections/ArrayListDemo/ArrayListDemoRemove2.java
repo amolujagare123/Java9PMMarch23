@@ -1,4 +1,4 @@
-package ArrayListDemo;
+package Collections.ArrayListDemo;
 
 import java.util.ArrayList;
 
@@ -17,12 +17,12 @@ public class ArrayListDemoRemove2 {
 
 
         System.out.println(al);
+        al.remove(5);
 
-       /* al.remove(5);
+        Integer aa = 24;
 
-        System.out.println(al);*/
-
-        al.remove(new Integer(53));
+        System.out.println(al);
+        al.remove(aa);
 
         System.out.println(al);
 

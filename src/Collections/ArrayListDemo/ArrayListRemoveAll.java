@@ -1,4 +1,4 @@
-package ArrayListDemo;
+package Collections.ArrayListDemo;
 
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class ArrayListRemoveAll {
 
         al2.removeAll(al);
 
-       System.out.println("al2="+al2);
+      System.out.println("al2="+al2);
 
 
     }
